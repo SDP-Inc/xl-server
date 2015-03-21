@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="appDataSource" class="org.xl.db.datasource.PostgresDataSource">
+        <constructor-arg name="dbServer" value="localhost" />
+        <constructor-arg name="dbPort" value="5432" />
+        <constructor-arg name="dbName" value="dds" />
+        <constructor-arg name="username" value="postgres" />
+        <constructor-arg name="password" value="postgres" />
+    </bean>
+
+</beans>
