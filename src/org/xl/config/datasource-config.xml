@@ -7,7 +7,7 @@
     <bean id="appDataSource" class="org.xl.db.datasource.PostgresDataSource">
         <constructor-arg name="dbServer" value="localhost" />
         <constructor-arg name="dbPort" value="5432" />
-        <constructor-arg name="dbName" value="dds" />
+        <constructor-arg name="dbName" value="XL" />
         <constructor-arg name="username" value="postgres" />
         <constructor-arg name="password" value="postgres" />
     </bean>
