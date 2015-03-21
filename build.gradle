@@ -30,6 +30,10 @@ dependencies {
     all*.exclude module: 'commons-logging'
 }*/
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
 task cleanLibDir(type: Delete) {
     delete fileTree(dir: "$buildDir/output/lib")
 }
