@@ -15,11 +15,11 @@
         </encoder>
     </appender>-->
 
-    <logger name="org.springframework" level="INFO" />
+    <logger name="org.xl" level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </logger>
 
-    <logger name="org.xl" level="DEBUG" />
-
-    <root level="INFO">
+    <root level="DEBUG">
         <appender-ref ref="STDOUT" />
     </root>
 

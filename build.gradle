@@ -24,11 +24,13 @@ dependencies {
             'org.apache.commons:commons-lang3:3.3.2',
 
             'org.slf4j:slf4j-simple:1.6.1',
+            'org.slf4j:jcl-over-slf4j:1.7.10',
+            'ch.qos.logback:logback-classic:1.1.2'
     )
 }
-/*configurations {
+configurations {
     all*.exclude module: 'commons-logging'
-}*/
+}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
